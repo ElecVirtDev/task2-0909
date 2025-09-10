@@ -13,7 +13,9 @@ import { authProvider } from "./authProvider";
 import koreanMessages from "./ra-language-korean.ts";
 import polyglotI18nProvider from "ra-i18n-polyglot";
 
-import DVDList from "./DVDList";
+import DVDList from "./data/DVDList";
+import DGBLCListGET from "./data/DGBLCListGET";
+import DGBLCListNEED from "./data/DGBLCListNEED";
 
 const messages = {
   ko: koreanMessages,
@@ -33,6 +35,18 @@ export const App = () => (
     <Resource
       name="경기도 성남시 성남 미디어센터 DVD 정보 (2025/05/29)"
       list={DVDList}
+      edit={EditGuesser}
+      show={ShowGuesser}
+    />
+    <Resource
+      name="대구광역시 북구_지방세 징수 현황_20241231"
+      list={DGBLCListGET}
+      edit={EditGuesser}
+      show={ShowGuesser}
+    />
+    <Resource
+      name="대구광역시 북구_지방세 체납 현황_20241231"
+      list={DGBLCListNEED}
       edit={EditGuesser}
       show={ShowGuesser}
     />
