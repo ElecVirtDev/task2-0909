@@ -10,14 +10,14 @@
     "format": "prettier --write ./src",
     "test": "vitest",
     "deploy": "gh-pages -d dist",
-    "predeploy": "npm run build",
-    "postinstall": "patch-package"
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^7.0.1",
     "@mui/material": "^7.0.1",
+    "@say8425/ra-language-korean": "^3.16.1",
     "ra-data-fakerest": "^5.11.0",
     "react": "^19.0.0",
     "react-admin": "^5.11.0",
@@ -41,7 +41,6 @@
     "gh-pages": "^6.3.0",
     "globals": "^16.0.0",
     "jsdom": "^24.1.1",
-    "patch-package": "^8.0.0",
     "prettier": "^3.3.3",
     "typescript": "^5.1.6",
     "typescript-eslint": "^8.28.0",

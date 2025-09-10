@@ -1,56 +1,53 @@
-// node_modules\.vite\deps\react-admin.js
-// // @ts-ignore
-// import {koreanMessages} from "../../../src/localize.js";
-// var esm_default = koreanMessages;
+import { TranslationMessages } from "ra-core";
 
-export const koreanMessages = {
+const koreanMessages: TranslationMessages = {
   ra: {
     action: {
-      add_filter: "Add filter",
-      add: "Add",
-      back: "Go Back",
-      bulk_actions: "1 item selected |||| %{smart_count} items selected",
-      cancel: "Cancel",
+      add_filter: "필터 추가",
+      add: "추가",
+      back: "뒤로 가기",
+      bulk_actions: "항목 선택됨 |||| %{smart_count} 개 항목 선택됨",
+      cancel: "취소",
       clear_array_input: "Clear the list",
       clear_input_value: "Clear value",
-      clone: "Clone",
-      confirm: "Confirm",
-      create: "Create",
-      create_item: "Create %{item}",
+      clone: "복제",
+      confirm: "확인",
+      create: "생성",
+      create_item: "%{item} 생성",
       delete: "삭제",
       edit: "편집",
       export: "내보내기",
-      list: "List",
+      list: "목록",
       refresh: "새로 고침",
       remove_filter: "Remove this filter",
       remove_all_filters: "Remove all filters",
-      remove: "Remove",
+      remove: "지우기",
       save: "저장",
-      search: "Search",
+      search: "검색",
       search_columns: "Search columns",
-      select_all: "Select all",
-      select_all_button: "Select all",
+      select_all: "모두 선택",
+      select_all_button: "모두 선택",
       select_row: "Select this row",
-      show: "Show",
-      sort: "Sort",
-      undo: "Undo",
-      unselect: "Unselect",
+      show: "보기",
+      sort: "정렬",
+      undo: "되돌리기",
+      unselect: "선택 해제",
       expand: "Expand",
-      close: "Close",
-      open_menu: "Open menu",
-      close_menu: "Close menu",
+      close: "닫기",
+      open_menu: "메뉴 열기",
+      close_menu: "메뉴 닫기",
       update: "Update",
       move_up: "Move up",
       move_down: "Move down",
-      open: "Open",
+      open: "열기",
       toggle_theme: "라이트/다크 모드 전환",
       select_columns: "Columns",
-      update_application: "Reload Application"
+      update_application: "Reload Application",
     },
     boolean: {
       true: "예",
       false: "아니오",
-      null: " "
+      null: " ",
     },
     page: {
       create: "Create %{name}",
@@ -64,89 +61,102 @@ export const koreanMessages = {
       empty: "No %{name} yet.",
       invite: "Do you want to add one?",
       access_denied: "Access denied",
-      authentication_error: "Authentication error"
+      authentication_error: "Authentication error",
     },
     input: {
       file: {
         upload_several: "Drop some files to upload, or click to select one.",
-        upload_single: "Drop a file to upload, or click to select it."
+        upload_single: "Drop a file to upload, or click to select it.",
       },
       image: {
         upload_several: "Drop some pictures to upload, or click to select one.",
-        upload_single: "Drop a picture to upload, or click to select it."
+        upload_single: "Drop a picture to upload, or click to select it.",
       },
       references: {
         all_missing: "Unable to find references data.",
-        many_missing: "At least one of the associated references no longer appears to be available.",
-        single_missing: "Associated reference no longer appears to be available."
+        many_missing:
+          "At least one of the associated references no longer appears to be available.",
+        single_missing:
+          "Associated reference no longer appears to be available.",
       },
       password: {
         toggle_visible: "Hide password",
-        toggle_hidden: "Show password"
-      }
+        toggle_hidden: "Show password",
+      },
     },
     message: {
       about: "About",
       access_denied: "You don't have the right permissions to access this page",
       are_you_sure: "Are you sure?",
-      authentication_error: "The authentication server returned an error and your credentials could not be checked.",
-      auth_error: "An error occurred while validating the authentication token.",
-      bulk_delete_content: "Are you sure you want to delete this %{name}? |||| Are you sure you want to delete these %{smart_count} items?",
+      authentication_error:
+        "The authentication server returned an error and your credentials could not be checked.",
+      auth_error:
+        "An error occurred while validating the authentication token.",
+      bulk_delete_content:
+        "Are you sure you want to delete this %{name}? |||| Are you sure you want to delete these %{smart_count} items?",
       bulk_delete_title: "Delete %{name} |||| Delete %{smart_count} %{name}",
-      bulk_update_content: "Are you sure you want to update %{name} %{recordRepresentation}? |||| Are you sure you want to update these %{smart_count} items?",
-      bulk_update_title: "Update %{name} %{recordRepresentation} |||| Update %{smart_count} %{name}",
+      bulk_update_content:
+        "Are you sure you want to update %{name} %{recordRepresentation}? |||| Are you sure you want to update these %{smart_count} items?",
+      bulk_update_title:
+        "Update %{name} %{recordRepresentation} |||| Update %{smart_count} %{name}",
       clear_array_input: "Are you sure you want to clear the whole list?",
       delete_content: "Are you sure you want to delete this %{name}?",
       delete_title: "Delete %{name} %{recordRepresentation}",
       details: "Details",
       error: "A client error occurred and your request couldn't be completed.",
-      invalid_form: "입력한 값이 유효하지 않습니다. 오류를 확인해주세요",
-      loading: "잠시 기다려주세요",
+      invalid_form: "The form is not valid. Please check for errors",
+      loading: "Please wait",
       no: "No",
       not_found: "Either you typed a wrong URL, or you followed a bad link.",
-      select_all_limit_reached: "There are too many elements to select them all. Only the first %{max} elements were selected.",
-      unsaved_changes: "Some of your changes weren't saved. Are you sure you want to ignore them?",
+      select_all_limit_reached:
+        "There are too many elements to select them all. Only the first %{max} elements were selected.",
+      unsaved_changes:
+        "Some of your changes weren't saved. Are you sure you want to ignore them?",
       yes: "Yes",
-      placeholder_data_warning: "Network issue: Data refresh failed."
+      placeholder_data_warning: "Network issue: Data refresh failed.",
     },
     navigation: {
       clear_filters: "Clear filters",
       no_filtered_results: "No %{name} found using the current filters.",
       no_results: "No %{name} found",
-      no_more_results: "The page number %{page} is out of boundaries. Try the previous page.",
+      no_more_results:
+        "The page number %{page} is out of boundaries. Try the previous page.",
       page_out_of_boundaries: "Page number %{page} out of boundaries",
       page_out_from_end: "Cannot go after last page",
       page_out_from_begin: "Cannot go before page 1",
       page_range_info: "%{offsetBegin}-%{offsetEnd} of %{total}",
-      partial_page_range_info: "%{offsetBegin}-%{offsetEnd} of more than %{offsetEnd}",
+      partial_page_range_info:
+        "%{offsetBegin}-%{offsetEnd} of more than %{offsetEnd}",
       current_page: "Page %{page}",
       page: "Go to page %{page}",
       first: "Go to first page",
       last: "Go to last page",
       next: "Go to next page",
       previous: "Go to previous page",
-      page_rows_per_page: "한 페이지에 표시할 게시글 개수:",
-      skip_nav: "Skip to content"
+      page_rows_per_page: "한번에 표시할 게시글 수:",
+      skip_nav: "Skip to content",
     },
     sort: {
-      sort_by: "Sort by %{field_lower_first} %{order}",
-      ASC: "ascending",
-      DESC: "descending"
+      sort_by: "%{field} %{order}으로 정렬",
+      ASC: "오름차순",
+      DESC: "내림차순",
     },
     auth: {
-      auth_check_error: "진행하려면 로그인하세요",
+      auth_check_error: "진행하려면 로그인하세요.",
       user_menu: "프로필",
       username: "사용자 이름",
       password: "비밀번호",
       email: "Email",
       sign_in: "로그인",
-      sign_in_error: "Authentication failed, please retry",
-      logout: "로그아웃"
+      sign_in_error: "다시 시도해보세요",
+      logout: "로그아웃",
     },
     notification: {
-      updated: "Element updated |||| %{smart_count} elements updated",
-      created: "Element created",
-      deleted: "Element deleted |||| %{smart_count} elements deleted",
+      updated:
+        "해당 요소가 갱신되었습니다 |||| %{smart_count} elements updated",
+      created: "해당 요소가 생성되었습니다",
+      deleted:
+        "해당 요소가 삭제되었습니다 |||| %{smart_count} elements deleted",
       bad_item: "Incorrect element",
       item_doesnt_exist: "Element does not exist",
       http_error: "Server communication error",
@@ -156,7 +166,7 @@ export const koreanMessages = {
       logged_out: "Your session has ended, please reconnect.",
       not_authorized: "You're not authorized to access this resource.",
       application_update_available: "A new version is available.",
-      offline: "No connectivity. Could not fetch data."
+      offline: "No connectivity. Could not fetch data.",
     },
     validation: {
       required: "필수",
@@ -168,7 +178,7 @@ export const koreanMessages = {
       email: "Must be a valid email",
       oneOf: "Must be one of: %{options}",
       regex: "Must match a specific format (regexp): %{pattern}",
-      unique: "Must be unique"
+      unique: "Must be unique",
     },
     saved_queries: {
       label: "Saved queries",
@@ -178,8 +188,9 @@ export const koreanMessages = {
       remove_label: "Remove saved query",
       remove_label_with_name: 'Remove query "%{name}"',
       remove_dialog_title: "Remove saved query?",
-      remove_message: "Are you sure you want to remove that item from your list of saved queries?",
-      help: "Filter the list and save this query for later"
+      remove_message:
+        "Are you sure you want to remove that item from your list of saved queries?",
+      help: "Filter the list and save this query for later",
     },
     configurable: {
       customize: "Customize",
@@ -189,22 +200,24 @@ export const koreanMessages = {
         content: "Hover the application UI elements to configure them",
         reset: "Reset Settings",
         hideAll: "Hide All",
-        showAll: "Show All"
+        showAll: "Show All",
       },
       Datagrid: {
         title: "Datagrid",
-        unlabeled: "Unlabeled column #%{column}"
+        unlabeled: "Unlabeled column #%{column}",
       },
       SimpleForm: {
         title: "Form",
-        unlabeled: "Unlabeled input #%{input}"
+        unlabeled: "Unlabeled input #%{input}",
       },
       SimpleList: {
         title: "List",
         primaryText: "Primary text",
         secondaryText: "Secondary text",
-        tertiaryText: "Tertiary text"
-      }
-    }
-  }
-}
+        tertiaryText: "Tertiary text",
+      },
+    },
+  },
+};
+
+export default koreanMessages;

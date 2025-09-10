@@ -8,12 +8,21 @@ import {
 import { Layout } from "./Layout";
 import { dataProvider } from "./dataProvider";
 import { authProvider } from "./authProvider";
+import koreanMessages from "./ra-language-korean.ts";
+import polyglotI18nProvider from "ra-i18n-polyglot";
+
+const messages = {
+  ko: koreanMessages,
+};
+const i18nProvider = polyglotI18nProvider((locale) => messages[locale], "ko");
 
 export const App = () => (
   <Admin
     layout={Layout}
     dataProvider={dataProvider}
     authProvider={authProvider}
+    locale="ko"
+    i18nProvider={i18nProvider}
   >
     <Resource
       name="OPENAPI 활용신청 TOP 10 (2025.08)"
