@@ -4,6 +4,8 @@ import {
   ListGuesser,
   EditGuesser,
   ShowGuesser,
+  radiantLightTheme,
+  radiantDarkTheme,
 } from "react-admin";
 import { Layout } from "./Layout";
 import { dataProvider } from "./dataProvider";
@@ -23,6 +25,8 @@ export const App = () => (
     authProvider={authProvider}
     locale="ko"
     i18nProvider={i18nProvider}
+    theme={radiantLightTheme}
+    darkTheme={radiantDarkTheme}
   >
     <Resource
       name="OPENAPI 활용신청 TOP 10 (2025.08)"
