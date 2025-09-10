@@ -17,7 +17,6 @@
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^7.0.1",
     "@mui/material": "^7.0.1",
-    "@say8425/ra-language-korean": "^3.16.1",
     "ra-data-fakerest": "^5.11.0",
     "react": "^19.0.0",
     "react-admin": "^5.11.0",
