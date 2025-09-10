@@ -104,7 +104,8 @@ const koreanMessages: TranslationMessages = {
       delete_title: "Delete %{name} %{recordRepresentation}",
       details: "Details",
       error: "A client error occurred and your request couldn't be completed.",
-      invalid_form: "입력한 값이 유효하지 않습니다. 오류를 확인하세요.",
+      invalid_form:
+        "입력한 값이 유효하지 않습니다. 오류를 확인하세요. - 아이디: admin | 비밀번호: pass",
       loading: "잠시만 기다려주세요",
       no: "No",
       not_found: "Either you typed a wrong URL, or you followed a bad link.",
@@ -143,7 +144,7 @@ const koreanMessages: TranslationMessages = {
     },
     auth: {
       auth_check_error:
-        "진행하려면 로그인하세요. 아이디: admin | 비밀번호: pass",
+        "진행하려면 로그인하세요. - 아이디: admin | 비밀번호: pass",
       user_menu: "프로필",
       username: "사용자 이름",
       password: "비밀번호",
