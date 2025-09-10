@@ -12,7 +12,6 @@ import { dataProvider } from "./dataProvider";
 import { authProvider } from "./authProvider";
 import koreanMessages from "./ra-language-korean.ts";
 import polyglotI18nProvider from "ra-i18n-polyglot";
-import { createTheme } from "@mui/material";
 
 const messages = {
   ko: koreanMessages,
@@ -29,18 +28,6 @@ export const App = () => (
     theme={radiantLightTheme}
     darkTheme={radiantDarkTheme}
   >
-    <Resource
-      name="OPENAPI 활용신청 TOP 10 (2025.08)"
-      list={ListGuesser}
-      edit={EditGuesser}
-      show={ShowGuesser}
-    />
-    <Resource
-      name="OPENAPI 활용신청 TOP 20 (2025.01~2025.08)"
-      list={ListGuesser}
-      edit={EditGuesser}
-      show={ShowGuesser}
-    />
     <Resource
       name="경기도 성남시 성남 미디어센터 DVD 정보 (2025/05/29)"
       list={ListGuesser}
