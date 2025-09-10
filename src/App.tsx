@@ -13,6 +13,8 @@ import { authProvider } from "./authProvider";
 import koreanMessages from "./ra-language-korean.ts";
 import polyglotI18nProvider from "ra-i18n-polyglot";
 
+import DVDList from "./DVDList";
+
 const messages = {
   ko: koreanMessages,
 };
@@ -30,7 +32,7 @@ export const App = () => (
   >
     <Resource
       name="경기도 성남시 성남 미디어센터 DVD 정보 (2025/05/29)"
-      list={ListGuesser}
+      list={DVDList}
       edit={EditGuesser}
       show={ShowGuesser}
     />
